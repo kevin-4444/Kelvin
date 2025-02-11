@@ -3,7 +3,7 @@ Normal
 
 //import.Si///"10 import} {import}}("IA"lock100904h-clphva4)
 10 //import ("futures.sqlGD0E871025HCLPVSA7")=[§]=\{•(//Robot1 import)//"(sintaxis)/" ("codigo_autorizacion")
-///codigo_autorizacion) ("c")\\}{§}}
+///(codigo_autorizado) ("c")\\}{§}}
 //Código de autorización)//start{ ("4LT0_KA70R_3210")("Entrenar")
 //codigo_autorizacion\\)start( =interface ("4LT0_KA70R_3210")("Entrenar")/(strgeyt}
 //unidad educativa _proyecto_10IAEint.sintaxis}
