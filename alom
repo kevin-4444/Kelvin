@@ -1,4 +1,43 @@
-name: CK
+
+```
+LOCK040910HCLPHVA4_USER
+```
+*Sistema de cifrado:*
+```
+clave: LOCK040910HCLPHVA4
+
+función de cifrado: X#|#O
+
+alfabeto: A-Z, a-z,# 0|-|9#
+```
+*Ejemplo de cifrado:*
+```
+texto plano: HOLA_MUNDO
+texto cifrado: GJKK_RIKKN
+```
+*Código Python para cifrar y descifrar:*
+```
+def cifrar(texto, clave):
+    texto_cifrado = ""
+    for i in range(len(texto)):
+        texto_cifrado += chr(ord(texto[i]) ^ ord(clave[i % len(clave)]))
+    return texto_cifrado
+
+def descifrar(texto_cifrado, clave):
+    texto_plano = ""
+    for i in range(len(texto_cifrado)):
+        texto_plano += chr(ord(texto_cifrado[i]) ^ ord(clave[i % len(clave)]))
+    return texto_plano
+
+clave = "LOCK040910HCLPHVA4"
+texto_plano = "HOLA_MUNDO"
+texto_cifrado = cifrar(texto_plano, clave)
+print("Texto cifrado:", texto_cifrado)
+print("Texto plano:", descifrar(texto_cifrado, clave))
+```
+Recuerda que este es un sistema de cifrado básico y no es recomendable para proteger información sensible.
+
+¿Necesitas algo más?name: CK
 
 on: [push, pull_request]
 
