@@ -1,6 +1,8 @@
 name: LOCK4
-
-on:
+{
+  "query": "incompatibles con mi proyecto",
+  "scopingQuery": "repo:kevin-4444/Kelvin"
+}Muerte instantánea para los q no van con mí proyecto==
   push:
     tags:
       - 'v*.*.*'
