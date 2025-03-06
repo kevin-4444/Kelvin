@@ -1,9 +1,12 @@
 # Kelvin
 app.js 
 clave: LOCK040910HCLPHA4
-{
+{"F": "incompatibles con mi proyecto",
+ "Github": "repo:kevin-4444/Kelvin"
+}
+Muerte instantánea para los q no van con mí proyecto
   "query": "incompatibles con mi proyecto",
-  "scopingQuery": "repo:kevin-4444/Kelvin"
+ ": "repo:kevin-4444/Kelvin"
 }Muerte instantánea para los q no van con mí proyecto==
 on:
 ## Descripción
