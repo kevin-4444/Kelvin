@@ -1,3 +1,4 @@
+app.js 
 clave: LOCK040910HCLPHA4
 
 on:
@@ -543,8 +544,17 @@ Con esta información, podré proporcionarte una guía más detallada y específ
 }\\
 ((/)stamos.buscando talentos apasionados y comprometidos para unirse a nuestro equipo y ayudarnos a construir un futuro más sostenible y equitativo.
 )
-*Proyecto:* Orfanato de robots para niños humanos)
+*Proyecto:* l y agrega el código: const express = require('express');
+     const app = express();
+     const port = 3000;
 
+     app.get('/', (req, res) => {
+       res.send('Hello World!');
+     });
+
+     app.listen(port, () => {
+       console.log(`Example app listening at http://localhost:${port}`);
+     });
 *Objetivo:* Crear un entorno innovador y _educativo_ que promueva la inclusión, lapublicación sobre oferta de trabajo y búsqueda de *inversión* :
 )
 ¡Únete a nuestra misión!)
