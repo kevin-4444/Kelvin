@@ -1,4 +1,22 @@
+import logging
 
+# Configurar el registro para kevin-444
+logging.basicConfig(level=logging.INFO)
+
+def reparacion_automatica():
+    # Lógica de reparación automática
+    logging.info("Intentando reparar automáticamente...")
+
+def funcion_principal():
+    try:
+        # Código que podría generar un error
+        resultado = 1 / 0
+    except ZeroDivisionError as e:
+        logging.error(f"Error detectado: {e}")
+        reparacion_automatica()
+
+if __name__ == "__main__":
+    funcion_principal()
 pip install nltkfrom nltk.chat.util import Chat, reflections
 
 # Definir pares de patrones y respuestas
