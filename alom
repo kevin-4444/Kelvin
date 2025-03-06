@@ -1,0 +1,16 @@
+name: CK
+
+on: [push, pull_request]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: skrip Node.js
+      uses: actions/skrip.node@v2
+      with:
+        node-version: '14'
+    - run: npm install
+    - run: npm test
