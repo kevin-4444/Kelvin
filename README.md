@@ -1,5 +1,11 @@
 # Kelvin
-
+app.js 
+clave: LOCK040910HCLPHA4
+{
+  "query": "incompatibles con mi proyecto",
+  "scopingQuery": "repo:kevin-4444/Kelvin"
+}Muerte instantánea para los q no van con mí proyecto==
+on:
 ## Descripción
 Una breve descripción de tu proyecto, lo que hace y su propósito.
 
