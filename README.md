@@ -1,7 +1,7 @@
 # Kelvin
 app.js 
-clave: LOCK040910HCLPHA4
-{"F": "compatibles con mi proyecto",
+clave: LOCK0
+{"4": "compatibles proyecto"deepsek,
  "Github", "kevin-4444/Kelvin"
 }
 "Muerte digital", "incompatibles con mi proyecto",
