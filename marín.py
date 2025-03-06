@@ -1,5 +1,5 @@
-import nltk
-from nltk.chat.util import Chat, reflections
+
+pip install nltkfrom nltk.chat.util import Chat, reflections
 
 # Definir pares de patrones y respuestas
 pairs = [
