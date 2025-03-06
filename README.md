@@ -1,13 +1,12 @@
 # Kelvin
 app.js 
 clave: LOCK040910HCLPHA4
-{"F": "incompatibles con mi proyecto",
- "Github": "aport:kevin-4444/Kelvin"
+{"F": "compatibles con mi proyecto",
+ "Github", "kevin-4444/Kelvin"
 }
-Muerte instantánea para los q no van con mí proyecto
-  "query": "incompatibles con mi proyecto",
- ": "repo:kevin-4444/Kelvin"
-}Muerte instantánea para los q no van con mí proyecto==
+"Muerte digital", "incompatibles con mi proyecto",
+ ": "kevin-4444/Kelvin"
+}#|#==
 on:
 ## Descripción
 Una breve descripción de tu proyecto, lo que hace y su propósito.
