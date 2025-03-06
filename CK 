@@ -1,4 +1,5 @@
-Configurar GitHub Actions: Puedes crear flujos de trabajo para automatizar tareas como pruebas y despliegues. Por ejemplo, crear un archivo .github/workflows/ci.yml para configurar CI: name: CI
+Configurar GitHub Actions: Puedes crear flujos de trabajo para automatizar tareas pip install transformers
+pip install torch como pruebas y despliegues. Por ejemplo, crear un archivo .github/workflows/ci.yml para configurar CI: name: CI
 
    on: [push, pull_request]
 
