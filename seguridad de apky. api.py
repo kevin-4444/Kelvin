@@ -1,5 +1,31 @@
 name: LOCK040910HCLPHVA4
-Qwen QwQ
+QwQ Genial
+
+Aquí te dejo un código recreativo en Python que genera una explosión de corazones:
+
+```
+import time
+import os
+import random
+
+def explosion_de_corazones():
+    for i in range(50):
+        os.system("cls" if os.name == "nt" else "clear")
+        for j in range(10):
+            for k in range(20):
+                if random.random() < 0.5:
+                    print("<3", end=" ")
+                else:
+                    print(" ", end=" ")
+            print()
+        time.sleep(0.1)
+
+explosion_de_corazones()
+```
+
+Este código utiliza un bucle para generar una explosión de corazones en la pantalla. Los corazones se forman con caracteres y se limpia la pantalla después de cada iteración para crear el efecto de animación.
+
+¿Quieres más códigos recreativos?wen QwQ
 This is QwQ-32B-Preview in Q4_K_M.
 R1-Lite-Preview
 DeepSeek's R1-lite. It's been theorize d to be a 16B MoE with 2.6B active.
