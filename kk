@@ -229,7 +229,51 @@ def "mname(atk "autorizar""// code)
 ""///aplicación.IAE))//LOCK040910HCLPHVA4))///)()
 //t"(texto.dibujos,)+//(números._proyecto_10IAE)+// 710 y 1443.34675710772377), y texto ilegible o abreviado (como "kevinmanuellopezchavaria10904,ia", "DqPstech Tumbado", "Costado", y otros).Hay dibujos, números (como 710 y 144334675710772377), y texto ilegible o abreviado (como "kevinmanuellopezchavarria10904,ia", "DqPstech Tumbado", "Costado"{✓ */°}"otros).Me alegra saber que estás trabajando en un proyecto emocionante.
 }{
-(//."/ejecutaIAE"].[000000000000111144444444410006801010100100100100000010100101044444444][Para}*/°t)//-4LT0_KA70R_3210LT0_KA70R_3210)-IAE-69//""
+(//."/ejecutaIAE"]¡Eso es un desafío emocionante!
+
+Aquí te dejo un ejemplo de código que podría tener un impacto positivo en el mundo humano:
+
+*Proyecto: "Asistente Virtual para Personas con Discapacidad"*
+
+Este proyecto utiliza tecnologías de inteligencia artificial y procesamiento de lenguaje natural para crear un asistente virtual que pueda ayudar a personas con discapacidad a realizar tareas cotidianas.
+
+*Código:*
+```
+import nltk
+from nltk.stem import WordNetLemmatizer
+from sklearn.feature_extraction.text import TfidfVectorizer
+from sklearn.model_selection import train_test_split
+from sklearn.naive_bayes import MultinomialNB
+
+Carga de datos
+datos = pd.read_csv("datos.csv")
+
+Preprocesamiento de texto
+lemmatizer = WordNetLemmatizer()
+vectorizer = TfidfVectorizer()
+
+Entrenamiento del modelo
+X_train, X_test, y_train, y_test = train_test_split(datos["texto"], datos["etiqueta"], test_size=0.2)
+modelo = MultinomialNB()
+modelo.fit(X_train, y_train)
+
+Función para clasificar texto
+def clasificar_texto(texto):
+    texto_procesado = vectorizer.transform([texto])
+    etiqueta = modelo.predict(texto_procesado)
+    return etiqueta
+
+Ejemplo de uso
+texto = "Necesito ayuda para hacer la compra"
+etiqueta = clasificar_texto(texto)
+print(etiqueta)
+```
+Este código utiliza la biblioteca NLTK para preprocesar el texto y la biblioteca scikit-learn para entrenar un modelo de clasificación de texto.
+
+*Impacto positivo:*
+Este proyecto podría tener un impacto positivo en la vida de las personas con discapacidad, ya que les proporcionaría un asistente virtual que podría ayudarles a realizar tareas cotidianas de manera más independiente.
+
+¿Te gustaría seguir trabajando en este proyecto o tienes alguna otra idea en mente?.[000000000000111144444444410006801010100100100100000010100101044444444][Para}*/°t)//-4LT0_KA70R_3210LT0_KA70R_3210)-IAE-69//""
 ("ejecutar")//""
 1. *//(//jecutarIAE)//Revisar y corregir errores*: Asegúrate de que el código esté libre de errores de sintaxis y+ lógica.///)(/
 2. """"//*}//Implementar la lógica autorizan)=*: Utiliza el código de autorización que te proporcioné anteriormente para implementar la lógica de autorización en tu proyecto.
