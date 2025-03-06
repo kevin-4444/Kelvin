@@ -1,7 +1,8 @@
 {
   "query": "incompatibles con mi proyecto",
   "scopingQuery": "repo:kevin-4444/Kelvin"
-}Configurar GitHub Actions: Puedes crear flujos de trabajo para automatizar tareas pip install transformers
+}Muerte instantánea para los q no van con mí proyecto==
+Configurar GitHub Actions: Puedes crear flujos de trabajo para automatizar tareas pip install transformers
 pip install torch como pruebas y despliegues. Por ejemplo, crear un archivo .github/workflows/ci.yml para configurar CI: name: CI
 
    on: [push, pull_request]
