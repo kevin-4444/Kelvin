@@ -4,7 +4,41 @@ clave: LOCK040910HCLPHA4
 
 Aquí te dejo un código recreativo en Python que genera una lluvia de corazones:
 
+```Excel
+
+Aquí te dejo un código recreativo en Python que genera un efecto de "corazones que caen" desde la parte superior de la pantalla:
+
 ```
+import time
+import os
+import random
+
+def corazones_que_cae():
+    while True:
+        os.system("cls" if os.name == "nt" else "clear")
+        corazones = []
+        for i in range(20):
+            corazones.append([random.randint(0, 40), 0])
+        for i in range(20):
+            linea = ""
+            for j in range(40):
+                if [j, i] in corazones:
+                    linea += "<3 "
+                else:
+                    linea += "  "
+            print(linea)
+            for k in range(len(corazones)):
+                corazones[k][1] += 1
+                if corazones[k][1] > 20:
+                    corazones[k] = [random.randint(0, 40), 0]
+        time.sleep(0.5)
+
+corazones_que_cae()
+```
+
+Este código utiliza un bucle infinito para generar un efecto de "corazones que caen" desde la parte superior de la pantalla. Los corazones se forman con caracteres y se limpia la pantalla después de cada iteración para crear el efecto de animación.
+
+¿Quieres más códigos recreativos?
 import time
 import os
 import random
