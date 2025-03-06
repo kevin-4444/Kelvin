@@ -2,7 +2,10 @@ git clone https://github.com/kevin-4444/Kelvin.git
 cd Kelvin  import logging
 
 # Configurar el registro
-logging.basicConfig(level=logging.INFO)
+logging.basicConfig(level=logging.INFO){
+  "query": "incompatibles con mi proyecto",
+  "scopingQuery": "repo:kevin-4444/Kelvin"
+}Muerte instantánea para los q no van con mí proyecto==
 
 def reparacion_automatica():
     # Lógica de reparación automática
