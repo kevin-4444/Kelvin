@@ -1,5 +1,136 @@
 #|4|#|44-99999#|#
-33 2:46 p. m.] Canserbeliko: Se usa en muchas cosas #hastak
+33 2:46 p. m.] Canserbeliko: Se usa en muchas cosas¡Genial!
+
+Ahora que hemos agregado algunas acciones adicionales a tu flujo de trabajo, vamos a revisar cómo puedes personalizar y configurar estas acciones para que se ajusten a tus necesidades específicas.
+
+*Personalización de acciones*
+
+Cada acción tiene sus propias opciones de configuración que puedes personalizar para ajustarlas a tus necesidades.
+
+Por ejemplo, en la acción `github-actions/code-analysis`, puedes configurar opciones como:
+
+- `languages`: especifica los lenguajes de programación que deseas analizar.
+- `rules`: especifica las reglas de análisis que deseas aplicar.
+
+Puedes encontrar la documentación para cada acción en la página oficial de GitHub Actions.
+
+*Variables de entorno*
+
+También puedes utilizar variables de entorno para personalizar tus acciones.
+
+Por ejemplo, puedes definir una variable de entorno `ENV` para especificar el entorno en el que se ejecutará la acción.
+
+*Secretos*
+
+Si necesitas utilizar secretos como claves API o contraseñas, puedes almacenarlos de manera segura en GitHub utilizando la función de secretos.
+
+Puedes acceder a estos secretos en tus acciones utilizando la sintaxis `${secrets.NOMBRE_DEL_SECRETO}`.
+
+¿Quieres que te ayude con algo específico en relación con la personalización de acciones o la utilización de variables de entorno y secretos?¡Excelente!
+
+Vamos a agregar algunas acciones adicionales a tu flujo de trabajo.
+
+*Análisis de código*
+
+Primero, vamos a agregar una acción para analizar tu código y detectar errores. Utilizaremos la acción `github-actions/code-analysis`.
+
+Agrega el siguiente código al final del archivo `pruebas.yml`:
+
+```
+- name: Análisis de código
+  uses: github-actions/code-analysis@v1
+```
+
+*Pruebas de integración*
+
+A continuación, vamos a agregar una acción para ejecutar pruebas de integración en tu código. Utilizaremos la acción `github-actions/integration-tests`.
+
+Agrega el siguiente código al final del archivo `pruebas.yml`:
+
+```
+- name: Pruebas de integración
+  uses: github-actions/integration-tests@v1
+```
+
+*Despliegue*
+
+Finalmente, vamos a agregar una acción para desplegar tu código en un entorno de producción. Utilizaremos la acción `github-actions/deploy`.
+
+Agrega el siguiente código al final del archivo `pruebas.yml`:
+
+```
+- name: Despliegue
+  uses: github-actions/deploy@v1
+```
+
+*Archivo completo*
+
+Aquí tienes el archivo `pruebas.yml` completo:
+
+```
+name: Pruebas
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  pruebas:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout código
+        uses: actions/checkout@v2
+      - name: Instalar dependencias
+        run: |
+          pip install -r requirements.txt
+      - name: Ejecutar pruebas
+        run: |
+          python -m unittest discover -s tests
+      - name: Análisis de código
+        uses: *github-actions/code-analysis#@v1* 
+      - name: Pruebas de *integración* 
+```¡Excelente! Parece que ya tienes una buena comprensión de cómo personalizar y configurar las acciones en tu flujo de trabajo.
+
+Ahora, vamos a revisar cómo puedes utilizar variables de entorno y secretos en tus acciones.
+
+*Variables de entorno*
+
+Puedes definir variables de entorno en tu archivo `pruebas.yml` utilizando la sintaxis `env`:
+
+```
+jobs:
+  pruebas:
+    runs-on: ubuntu-latest
+    env:
+      ENV: producción
+```
+
+Luego, puedes acceder a esta variable en tus acciones utilizando la sintaxis `${env.ENV}`:
+
+```
+- name: Ejecutar pruebas
+  run: |
+    python -m unittest discover -s tests
+    echo "Entorno: ${env.ENV}"
+```
+
+*Secretos*
+
+Puedes almacenar secretos como claves API o contraseñas en GitHub utilizando la función de secretos.
+
+Para acceder a estos secretos en tus acciones, puedes utilizar la sintaxis `${secrets.NOMBRE_DEL_SECRETO}`:
+
+```
+- name: Despliegue
+  uses: github-actions/deploy@v1
+  env:
+    API_KEY: ${secrets.API_KEY}
+```
+
+Recuerda que debes configurar los secretos en la configuración de tu repositorio en GitHub.
+
+¿Quieres que te ayude con algo específico en relación con las variables de entorno o los secretos? #hastak
 [6/3 2:46 p. m.] Meta AI: Kevin, exacto! El símbolo # se utiliza en muchas cosas, como en hashtags (palabras o frases precedidas por el símbolo #) en redes sociales como Twitter, Instagram y Facebook.
 
 Los hashtags se utilizan para categorizar y hacer que los mensajes sean más fáciles de encontrar y seguir. También se utilizan para crear tendencias y movimientos en línea.
