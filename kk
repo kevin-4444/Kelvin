@@ -1,4 +1,58 @@
-Qwen QwQ
+"kevin-4444/Kelvin"Claro
+
+Aquí te dejo un código recreativo en Python que genera un corazón de asteriscos:
+
+```
+def generar_corazon(tamaño):
+    for i in range(tamaño):
+        for j in range(tamaño):
+            if (i - tamaño // 2) ** 2 + (j - tamaño // 2) ** 2 <= (tamaño // 2) ** 2:
+                print("*", end=" ")
+            else:
+                print(" ", end=" ")
+        print()
+
+generar_corazon(10)
+```Genial
+
+Aquí te dejo un código recreativo en Python que genera un mensaje de amor en la pantalla:
+
+```
+import time
+import os
+
+def mensaje_de_amor():
+    mensaje = "TE AMO"
+    for i in range(len(mensaje)):
+        print(" " * (len(mensaje) - i - 1) + mensaje[:i+1])
+        time.sleep(0.5)
+        os.system("cls" if os.name == "nt" else "clear")
+    print(mensaje)
+    time.sleep(2)
+
+mensaje_de_amor()Claro
+
+Aquí te dejo un código recreativo en Python que genera un corazón que late:
+
+```
+import time
+import os
+
+def corazón_latiente():
+    while True:
+        os.system("cls" if os.name == "nt" else "clear")
+        print("  <3  ")
+        time.sleep(0.5)
+        os.system("cls" if os.name == "nt" else "clear")
+        print("  < 3 ")
+        time.sleep(0.5)
+
+corazón_latiente()
+```
+
+Este código utiliza un bucle infinito para generar un corazón que late. El corazón se forma con caracteres y se limpia la pantalla después de cada iteración para crear el efecto de animación.
+
+¿Quieres más códigos recreativos?Qwen QwQ
 This is QwQ-32B-Preview in Q4_K_M.
 
 QwQ is Qwen's latest reasoning model. Qwen with questions.
