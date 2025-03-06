@@ -1,6 +1,6 @@
 # Kelvin
 Normal 
-
+wget https://raw.githubusercontent.com/EXALAB/AnLinux-Resources/master/Library/Ashmem/i386/libandroid-shmem.so -P /usr/local/lib
 //import.Si///"10 import} {import}}("IA"lock100904h-clphva4)
 10 //import ("futures.sqlGD0E871025HCLPVSA7")=[§]=\{•(//Robot1 import)//"(sintaxis)/" ("codigo_autorizacion")
 ///codigo_autorizacion) ("c")\\}{§}}
