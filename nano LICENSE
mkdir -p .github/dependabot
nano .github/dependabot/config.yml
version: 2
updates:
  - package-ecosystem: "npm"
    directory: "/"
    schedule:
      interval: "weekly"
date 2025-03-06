@@ -1,0 +1,9 @@
+nano LICENSE
+mkdir -p .github/dependabot
+nano .github/dependabot/config.yml
+version: 2
+updates:
+  - package-ecosystem: "npm"
+    directory: "/"
+    schedule:
+      interval: "weekly"
