@@ -4,7 +4,7 @@ mkdir -p .github/workflows
 nano .github/workflows/ci.yml
 # Añadir contenido al archivo y guardar
 git add .github/workflows/ci.yml
-git commit -m "Añadir flujo de trabajo CI"
+git commit -m "Añadir flujo de trabajo CK
 git push origin main
 mkd -p .github/dependabot
 nano .github/dependabot/config.yml
