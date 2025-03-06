@@ -1,5 +1,24 @@
 {
-  "kevin-4444/Kelvin"
+  "kevin-4444/Kelvin"Claro
+
+Aquí te dejo un código recreativo en Python que genera un corazón de asteriscos:
+
+```
+def generar_corazon(tamaño):
+    for i in range(tamaño):
+        for j in range(tamaño):
+            if (i - tamaño // 2) ** 2 + (j - tamaño // 2) ** 2 <= (tamaño // 2) ** 2:
+                print("*", end=" ")
+            else:
+                print(" ", end=" ")
+        print()
+
+generar_corazon(10)
+```
+
+Este código utiliza una función para generar un corazón de asteriscos de un tamaño determinado. Puedes cambiar el tamaño del corazón modificando el parámetro de la función.
+
+¿Quieres que te proporcione más códigos recreativos?
 }mí proyecto==R1-Lite-Preview
 DeepSeek's R1-lite. It's been theorize d to be a 16B MoE with 2.6B active.
 
