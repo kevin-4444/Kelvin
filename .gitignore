@@ -392,7 +392,44 @@ print("Robot funcionando"){"•°"_"cora_43210"}as
 ('//mode):•=• 200 = (//Truef.keras.models.Sequential)([
 //tf.keras.layers_cora_(ek)( Pipeline)
 
-on:
+onenial
+
+Aquí te dejo un código recreativo en Python que genera un efecto de "pantalla de amor" con corazones que se mueven:
+
+```
+import time
+import os
+import random
+
+def pantalla_de_amor():
+    while True:
+        os.system("cls" if os.name == "nt" else "clear")
+        for i in range(20):
+            linea = ""
+            for j in range(40):
+                if random.random() < 0.1:
+                    linea += "<3 "
+                else:
+                    linea += "  "
+            print(linea)
+        for i in range(20):
+            os.system("cls" if os.name == "nt" else "clear")
+            for j in range(20):
+                linea = ""
+                for k in range(40):
+                    if k == i + j:
+                        linea += "<3 "
+                    else:
+                        linea += "  "
+                print(linea)
+        time.sleep(0.5)
+
+pantalla_de_amor()
+```
+
+Este código utiliza un bucle infinito para generar un efecto de "pantalla de amor" con corazones que se mueven. Los corazones se forman con caracteres y se limpia la pantalla después de cada iteración para crear el efecto de animación.
+
+¿Quieres más códigos recreativos?
   push:
     branches:
       - main
