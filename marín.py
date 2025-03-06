@@ -22,7 +22,34 @@ Wait a minute, maybe "wheels" isn't referring to actual wheels. Could it be a me
 Let me think about the relationship between pancakes and a dog house. Pancakes are flat and round, so maybe it's about covering a surface area. If I wanted to cover a dog house with pancakes, I'd need to calculate how many pancakes it would take based on the size of the dog house and the size of a pancake.
 
 But that seems too straightforward, and it doesn't take into account the first part of the question. Maybe the first part is giving me some clues about measurements or units. "Flying over a desert in a canoe" – maybe it's about distance or speed, but I'm not sure how that ties in.
+from vllm import LLM
+from vllm.sampling_params import SamplingParams
+from transformers import AutoTokenizer
 
+class InferlessPythonModel:
+    def initialize(self):
+        model_id = "Qwen/QwQ-32B-Preview"
+        self.llm = LLM(model=model_id,gpu_memory_utilization=0.9,max_model_len=5000)
+        self.tokenizer = AutoTokenizer.from_pretrained(model_id)
+
+    def infer(self, inputs):
+        prompts = inputs["prompt"]
+        temperature = inputs.get("temperature",0.7)
+        top_p = inputs.get("top_p",0.1)
+        repetition_penalty = inputs.get("repetition_penalty",1.18)
+        top_k = int(inputs.get("top_k",40))
+        max_tokens = inputs.get("max_tokens",256)
+
+        sampling_params = SamplingParams(temperature=temperature,top_p=top_p,repetition_penalty=repetition_penalty,
+                                         top_k=top_k,max_tokens=max_tokens)
+        input_text = self.tokenizer.apply_chat_template([{"role": "user", "content": prompts}], tokenize=False)
+        result = self.llm.generate(input_text, sampling_params)
+        result_output = [output.outputs[0].text for output in result]
+
+        return {'generated_text': result_output[0]}
+
+    def finalize(self):
+        self.llm = None
 Alternatively, maybe the key is to realize that the scenario described is impossible or doesn't make sense, which might imply that the answer to the question is also nonsensical or that it's a trick question. If you're flying over a desert in a canoe with no wheels, perhaps the number of pancakes needed is zero because the scenario itself is impossible.
 
 But that feels a bit too dismissive. Maybe there's a deeper meaning or a specific answer that I'm missing. Let me try to think of it differently. Could "pancakes" refer to something other than the breakfast food? Is there another meaning to "pancake" that I'm unaware of? A quick search in my mind tells me that "pancake" can also refer to a type of aircraft, like the F-111 Aardvark, which was called the "Pancake" due to its shape. But I'm not sure if that's relevant here.
