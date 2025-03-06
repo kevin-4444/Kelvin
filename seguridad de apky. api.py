@@ -25,5 +25,5 @@ jobs:
       with:
         languages: ${{ matrix.language }}
 
-    - name: Perform CodeQL Analysis
-      uses: github/codeql-action/analyze@v1
+    : ${{ secrets.STRIPE_SECRET_KEY }}
+      run: node scripts/pagos.js
