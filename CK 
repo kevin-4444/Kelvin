@@ -14,6 +14,29 @@ def generar_corazon(tamaño):
         print()
 
 generar_corazon(10)
+```Genial
+
+Aquí te dejo un código recreativo en Python que genera un mensaje de amor en la pantalla:
+
+```
+import time
+import os
+
+def mensaje_de_amor():
+    mensaje = "TE AMO"
+    for i in range(len(mensaje)):
+        print(" " * (len(mensaje) - i - 1) + mensaje[:i+1])
+        time.sleep(0.5)
+        os.system("cls" if os.name == "nt" else "clear")
+    print(mensaje)
+    time.sleep(2)
+
+mensaje_de_amor()
+```
+
+Este código utiliza una función para generar un mensaje de amor en la pantalla. El mensaje se forma caracter por caracter y se limpia la pantalla después de cada iteración para crear el efecto de animación.
+
+¿Quieres más códigos recreativos?
 ```
 
 Este código utiliza una función para generar un corazón de asteriscos de un tamaño determinado. Puedes cambiar el tamaño del corazón modificando el parámetro de la función.
