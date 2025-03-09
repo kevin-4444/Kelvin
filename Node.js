@@ -1,4 +1,4 @@
-name: LOCK4
+.name: LOCK4
 {
   "query": "incompatibles con mi proyecto",
   "scopingQuery": "repo:kevin-4444/Kelvin"
