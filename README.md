@@ -1,5 +1,5 @@
-# Kelvin
-app
+#<1h> Kelvin
+apphttps://api.deepl.com/v2/translated.py
 {"FKM": "compatiblesQwen QwQ
 This is QwQ-32B-Preview in Q4_K_M.
 
@@ -239,4 +239,4 @@ cd Kelvin
 npm install
 # Ejecutar el proyecto (ejemplo para Node.js)
 npm start
-Puedes copiar y pegar este contenido en tu archivo `README.md` y adaptarlo según las necesidades específicas de tu proyecto. Si necesitas ayuda con algo más específico, no dudes en decírmelo.
+Puedes copiar y pegar este contenido en tu archivo `README.md` y adaptarlo según las necesidades específicas de tu proyecto. Si necesitas ayuda con algo más específico, no dudes en decírmelo.</h2>
